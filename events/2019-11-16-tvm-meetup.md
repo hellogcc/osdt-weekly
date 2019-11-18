@@ -1,5 +1,7 @@
 # TVM meetup 记录
 
+（完整版本请参考两篇微信公众号文章： [TVM Meetup @ Shanghai 见闻](https://mp.weixin.qq.com/s/qNuvJzjBN_rIpVdP-E6YBA) 和 [TVM Meetup 分享（续）](https://mp.weixin.qq.com/s/oswwdXAkIL47mJTOU0AsGg) ）
+
 多图提示：大概三个手机屏幕之后会有大量图片
 
 2019年11月16日周六，在上海虹桥枢的某酒店会议厅，国内第一次专业的 TVM Meetup 完满的结束。会议的报名连接很早就达到了70人的上限，以至于主办方不得不在报名页面呼吁千万不要在当天挤爆会场。现场的情况还在可控范围之内，零零散散站得下（座位自然是没有多余的了）。
