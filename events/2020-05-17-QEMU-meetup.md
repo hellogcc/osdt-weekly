@@ -16,6 +16,10 @@ QEMU主题采用线上聚会形式，分为两种参与方式：观看活动可�
 4. QEMU TCG Plugins 介绍和使用（王俊强）
 5. 新报名的报名分享以及自由讨论
 
+或许你会感兴趣的 QEMU GSoC 2020:
+
+https://wiki.qemu.org/Google_Summer_of_Code_2020
+
 ## 活动时间
 
 2020年5月17日 周日 10:00 AM - 11:30 AM
