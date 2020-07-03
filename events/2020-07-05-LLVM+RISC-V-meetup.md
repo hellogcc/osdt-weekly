@@ -12,7 +12,7 @@ The next OSDT Meetup will happen on July 5th, 2020. The location is webinar styl
 
 We thank Shanghai RISC-V Group for event organization and I.S.C.A.S. for Zoom sharing. This meetup is hold by OSDT community (formerly HelloGCC and HelloLLVM communities).
 
-## 活动时间 Program
+## 活动时间 / Time
 
 2020年7月5日 周日 10:00 AM - 12:00 AM
 
