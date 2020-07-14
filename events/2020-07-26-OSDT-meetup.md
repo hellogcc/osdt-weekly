@@ -19,13 +19,44 @@ OSDT 社区组织的线上技术讨论会将在7月26日周日上午10点开始�
 
 - 开场介绍（吴伟 as MC）
 - Opening - Wei Wu (chair)
-- 技术分享01 - TBD，
-- 技术分享02 - TBD，
+- Mohanson - 如何通过 LLVM-9 将 WebAssembly WASI 程序翻译到 x86/RISC-V ELF 程序(AOT)
+- MaskRay - 讨论 RISC-V Linker Relaxation 的弊端（狗头）
 - 技术分享03 - TBD，
 - 技术分享04 - TBD，
 - 自由话题讨论
 - Free discussion
 
+**Mohanson - 如何通过 LLVM-9 将 WebAssembly WASI 程序翻译到 x86/RISC-V ELF 程序(AOT)**
+
+与大多数采用 WebAssembly 的公链不同(以太坊 2.0, EOS ... ), Nervos CKB 是使用 RISC-V 指令集的公链. 在过去的一段时间, 得益于 GCC 与 LLVM 对 RISC-V 的支持, 我们证明可以通过一些技术手段, 将 WebAssembly 程序在没有大的性能损失的前提下翻译为 RISC-V 程序。 WASC 便是这个解决方案的实践. 我将分享介绍 WASC 实现的原理, 在实现过程遇到的问题及解决方式, 以及最后对 WebAssembly 指令集与 RISC-V 指令集的反思。
+
+Mohanson, cryptape 高级工程师. 2014年毕业于安徽大学通信工程, 早年任职于科大讯飞与又拍云从事数字图像处理与 Deep Learning 相关工作; 2017年后开始在区块链虚拟机, 智能合约编程语言与编译器方向发展. 曾主导/参与过一些开源项目，包括 CITA-WM、minits、gameboy模拟器、pywasm 等。
+
+博客主页: http://accu.cc
+
+Github 主页: https://github.com/mohanson
+
+我主导的一些项目(公司项目, 均已开源):
+
+- CITA-VM: CITA 是国内知名的联盟链解决方案, CITA-VM 则是 CITA 的虚拟机模块, 采用 EVM 指令集.
+
+- minits: TypeScript 的静态编译方案, 底层使用 LLVM, 可以将 ts 的一个语法子集编译到 RISC-V, x86 和 WebAssembly. 在去年的中国开源年会(11月 02-03日, 华东师范大学), 我做了关于 minits 的主题演讲.
+
+我的一些个人项目:
+
+- gameboy 模拟器. github 上 star 数量相对靠前的一个 gb 模拟器实现, 我的博客上有关于模拟器技术的教程, 约 30 来万字, 本来是准备出版的, 不过收到了任天堂的律师函警告只能作罢.
+
+- pywasm: 纯 python 实现的 webassembly 解释器, python 社区曾有 pypi 核心开发者提议将 wasm 写入 python 标准库, 提议人的初版实现便是使用的 pywasm. 国外有个大学(可能是印度)也使用了它来进行计算机实验课教学, 几年前发过邮件征求过我意见, 不过具体忘记是哪个学校了.
+
+**MaskRay - 讨论 RISC-V Linker Relaxation 的弊端（狗头）**
+
+TODO 演讲内容简介
+
+TODO brief introduction for this talk
+
+MaskRay，一个活跃的LLVM开发者 (LLD+binary utilities 维护者，缓慢学习 clang/middle-end/CodeGen)，退休的Algo/CTF/Student Cluster Competition 选手 / emacs-lsp 维护者。ccls++🎉
+
+MaskRay is an active LLVM developer (maintains LLD + Binary Utilities, learning clang/middle-end/codegen slowly), a retired Algo / CTF / Student Cluster Competition athlete / emacs-lsp maintainer. ccls++🎉
 ## 直播观看（永久地址，可收藏）
 
 https://live.bilibili.com/10339607
