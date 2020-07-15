@@ -50,7 +50,7 @@ Github 主页: https://github.com/mohanson
 
 **MaskRay - 讨论 RISC-V Linker Relaxation 的弊端（狗头）**
 
-TODO 演讲内容简介
+与多数RISC架构不同，RISC-V采用支援指令删除的linker relaxation实现长距离的跳转/内存存取。本主题和大家探讨一下linker relaxation给工具链造成的困难，以及特别地，在LLD中实现R_RISCV_ALIGN/R_RISCV_RELAX的困难。
 
 TODO brief introduction for this talk
 
