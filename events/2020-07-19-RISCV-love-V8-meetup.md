@@ -1,4 +1,6 @@
-# OSDT Meetup: RISC-V❤️V8 2020-07-19
+# OSDT Meetup: RISC-V❤️V8 2020-07-tbd
+
+【由于7月19日RIOS有另外的活动，线上讨论会推迟，时间待定】
 
 Hi all,
 
