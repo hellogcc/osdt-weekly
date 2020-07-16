@@ -9,8 +9,11 @@ next day a better version had been released by FutureWei and RIOS Lab.
 We definitely need a technical meetup for both teams and the whole RISC-V
 community. A Zoom meeting will be hold by OSDT community, on the Date below.
 Anyone who are interested in V8 RISC-V porting could attend the zoom meeting using
-meetup[1] or just drop a mail to lazyparser at gmail dot com.
+meetup[1] or just drop a mail to lazyparser at gmail dot com.[2]
 
+[1] https://www.meetup.com/shanghai-riscv/
+
+[2] The OSDT thank ISRC, ISCAS for Zoom support.
 
 7月15日，软件所PLCT实验室开源了跑通了helloworld的V8版本；7月16日，RIOS + FutureWei 联合发布了接近完整版本的 RISC-V V8。
 
@@ -19,6 +22,8 @@ V8 一直是 RISC-V 基金会列在 Help Wanted 页面的三个软件之一。�
 本次线上讨论会采用类似 BoF 和 AMA 形式。欢迎加入 Zoom 会议交流讨论。中文英文提问都可以。
 
 OSDT 社区组织的线上技术讨论会将在7月26日周日上午11点开始。本次依然采用线上形式。欢迎大家报名演讲.
+
+感谢软件所ISRC提供Zoom会议支持。
 
 ## 活动时间 / Time
 
