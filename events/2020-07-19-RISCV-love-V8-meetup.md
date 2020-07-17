@@ -1,10 +1,10 @@
-# [Draft] OSDT Meetup: RISC-V ❤️ V8 2020-07-19
+# OSDT Meetup: RISC-V ❤️ V8 2020-07-19
 
 Hi all,
 
 We have two good news in this week: on Tuesday the PLCT lab released the initial
-source code which could run helloworld.js on QEMU and real RISC-V64GC board; the
-next day a better version had been released by FutureWei and RIOS Lab.
+V8 source code which could run helloworld.js on QEMU and real RISC-V64GC board;
+the next day a better version had been released by FutureWei and RIOS Lab.
 
 We definitely need a technical meetup for both teams and the whole RISC-V
 community. A Zoom meeting will be hold by OSDT community, on the Date below.
@@ -35,8 +35,8 @@ OSDT 社区组织的线上技术讨论会将在7月26日周日上午11点开始�
 
 ## 活动议程 / Program
 
-- Opening - Wei Wu (chair)
-- Keynote: The Roadmap of V8 RISC-V Porting - Peng Wu
+- Opening (with PLCT V8 brief) - Wei Wu (chair)
+- Keynote: The Roadmap of V8 RISC-V Porting - Peng Wu (FutureWei Technologies)
 - Free discussion
 
 ## 直播观看 / Live Streaming
