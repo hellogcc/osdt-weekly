@@ -14,8 +14,9 @@ OSDT 社区组织的线上技术讨论会将在7月26日周日上午10点开始�
 - Wei Wu (chair) - 开场介绍
 - Mohanson - 如何通过 LLVM-9 将 WebAssembly WASI 程序翻译到 x86/RISC-V ELF 程序(AOT)
 - MaskRay - 讨论 RISC-V Linker Relaxation 的弊端（狗头）
-- Talk 03 - TBD
-- Lighting Talks
+- 闪电：廖春玉 - clang中实现forstmt转换
+- 闪电：陆旭凡 - 在LLVM指令选择中如何一条指令有多个寄存器类
+- 闪电：陆旭凡 - 展示下最近对llvm栈分配的学习
 - Free discussion
 
 **Mohanson - 如何通过 LLVM-9 将 WebAssembly WASI 程序翻译到 x86/RISC-V ELF 程序(AOT)**
@@ -49,6 +50,20 @@ TODO brief introduction for this talk
 MaskRay，一个活跃的LLVM开发者 (LLD+binary utilities 维护者，缓慢学习 clang/middle-end/CodeGen)，退休的Algo/CTF/Student Cluster Competition 选手 / emacs-lsp 维护者。ccls++🎉
 
 MaskRay is an active LLVM developer (maintains LLD + Binary Utilities, learning clang/middle-end/codegen slowly), a retired Algo / CTF / Student Cluster Competition athlete / emacs-lsp maintainer. ccls++🎉
+
+
+**闪电：廖春玉 - clang中实现forstmt转换**
+
+廖春玉，PLCT Lab 员工。长期做 Clang/LLVM 的开发工作。
+
+**闪电：陆旭凡 - 在LLVM指令选择中如何一条指令有多个寄存器类**
+
+陆旭凡，人海中一名普普通通的大学生。最近在 PLCT Lab 实习，开始在 LLVM 社区围绕 RISC-V 后端贡献代码。
+
+**闪电：陆旭凡 - 展示下最近对llvm栈分配的学习**
+
+跟上边是同一个同学。
+
 ## 直播观看（永久地址，可收藏）
 
 https://live.bilibili.com/10339607
@@ -57,7 +72,9 @@ https://live.bilibili.com/10339607
 
 ## 通过 Zoom 参加
 
-我们将在会议当天上午通过 HelloGCC 公众号（搜索 hellogcc2007）发布会议信息。请通过负责人微信或HelloGCC公众号与我们联系，获取Zoom会议室信息。没有微信的朋友请通过 lazyparser at gmail.com 跟我联系，请在邮件标题中体现本次活动信息以免被垃圾邮件过滤。
+本次Zoom会议由RISC-V基金会提供，需要填写一下邮箱地址，之后会得到一个自己唯一的URL，记住这个URL，到时候在浏览器中输入，按照提示安装插件或客户端进入。点击【查看原文】可以进入zooom页面。
+
+https://zoom.us/webinar/register/WN_UYtzSRPwQ0K6w3kGsEBjbQ
 
 ## 演讲报名
 
