@@ -9,7 +9,7 @@
 ## 活动议程 / Program
 
 - 吴伟 - 近期RISC-V基金会的动向以及参与的机会
-- 史宁宁 - TBD
+- 史宁宁 - ART OptimizingCompiler 简析
 - TBD - 欢迎投稿
 - Free discussion
 
@@ -19,9 +19,9 @@ PLCT Lab 最近开始密集地参与到 RISC-V 国际基金会的各个技术讨
 
 吴伟是 PLCT Lab 项目总监、OSDT 社区负责人。
 
-**史宁宁 - TBD**
+**史宁宁 - ART OptimizingCompiler 简析**
 
-TODO
+OptimizingCompiler是ART的重要组成部分，是ART中AOT编译的具体执行者。同时，AOT编译过程中的主要环节在OptimizingCompiler层面，都有相应接口。理解OptimizingCompiler对理解整个ART有非常重要的作用。本次分享将对OptimizingCompiler的使用及实现做简要分析。
 
 史宁宁是 PLCT Lab 项目主管、OSDT 社区活跃贡献者。
 
