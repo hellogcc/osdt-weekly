@@ -6,10 +6,12 @@
 
 **2020年12月27日 上午10:00至12:00**
 
+完整视频回看： [2020年最后的OSDT聚会 - OpenJ9, Musl, RISC-V](https://www.bilibili.com/video/BV1t54y1t7JY)
+
 - 09:50 - 10:00 开场、自我介绍等
-- 10:00 - 11:00 金诚 - OpenJ9 on RISC-V
-- 11:00 - 11:50 MaskRay - musl security features
-- 11:50 - 12:00 预留报告/闪电演讲：TBD、欢迎报名。
+- 10:00 - 11:00 金诚 - OpenJ9 on RISC-V [video](https://www.bilibili.com/video/BV1Gy4y1U7wQ)
+- 11:00 - 11:50 MaskRay - musl security features [video](https://www.bilibili.com/video/BV1H5411H78v)
+- 11:50 - 12:00 预留报告/闪电演讲：TBD、欢迎报名。(None)
 
 ## 直播观看
 
