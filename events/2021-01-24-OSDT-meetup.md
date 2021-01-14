@@ -16,6 +16,7 @@ TODO 会议后添加
 - Call for speakers
 - MaskRay - TBD（近期工作）
 - 廖春玉 - TBD
+- 李威威 - Introduction of SAIL Model （看多少讲多少）
 - 自由讨论
 
 ## 直播观看
