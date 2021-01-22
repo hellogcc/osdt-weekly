@@ -13,9 +13,9 @@ TODO 会议后添加
 
 ## 活动议程
 
-- Call for speakers
-- MaskRay - TBD（近期工作）
-- 廖春玉 - TBD
+- 汪辰 - 阿里平头哥的 AOSP for RISC-V 开源分析：爱好者是否能够快速的适配到自己手里的板子？
+- MaskRay - 例行的近期工作分享，or 抢救性代码考古挖掘
+- 廖春玉 - Clang/LLVM 相关的近期工作分享
 - 李威威 - Introduction of SAIL Model （看多少讲多少）
 - 自由讨论
 
