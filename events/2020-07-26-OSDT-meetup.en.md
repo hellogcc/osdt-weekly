@@ -8,7 +8,7 @@ Toolchains, LLVM Family, RISC-V and other Open Source tools. Besides, we also
 welcome friends from chisel/FIRRTL and openROAD/SkyWater projects.
 
 Talks or lighting are welcome too. please drop me an email if you want to share
-something interesting or inspring.
+something interesting or inspiring.
 
 ## Time
 
