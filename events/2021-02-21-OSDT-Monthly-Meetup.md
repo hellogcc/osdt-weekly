@@ -35,6 +35,16 @@ No login needed. you can view it directly.
 
 ## Join the Zoom Meeting!
 
+Wei Wu - PLCT Lab is inviting you to a scheduled Zoom meeting.
+
+Topic: OSDT Monthly Meetup Feb-2021
+Time: Feb 21, 2021 10:00 AM Beijing, Shanghai
+
+Join Zoom Meeting
+https://zoom.com.cn/j/89465142537?pwd=YVA2MEhuSXJQd2pFM2lCa0xoRVdFdz09
+
+Meeting ID: 894 6514 2537
+Passcode: 555049
 
 ## Call for Speakers/Talkers
 
