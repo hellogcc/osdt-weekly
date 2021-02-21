@@ -4,6 +4,15 @@
 
 This is a virtual meetup. Let's talk in the Zoom Meeting Room.
 
+- 张洪滨 - ONNX-MLIR LeNet 端到端编译过程 - 20210221 - OSDT Meetup
+  https://www.bilibili.com/video/BV1Vr4y1A7Cg
+
+- RadarSong - 用VSCode来调试TVM - 20210221 - OSDT Meetup
+  https://www.bilibili.com/video/BV1H5411N7ag
+
+- MaskRay (Fangrui Song) - Metadata Sections - 20210221 - OSDT Meetup
+  https://www.bilibili.com/video/BV1HA411M7SN
+
 ## Time
 
 LOS ANGELES, United States, California
