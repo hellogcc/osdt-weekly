@@ -10,7 +10,8 @@ This is a virtual meetup. Let's talk in the Zoom Meeting Room.
 
 ## Agenda
 
-- 欢迎报名
+- 吴思宇：RISC-V K指令扩展功能概述
+- MaskRay：Compiler driver and cross compiling
 - Open Discussion
 
 ## Live Streaming
@@ -23,10 +24,10 @@ No login needed. you can view it directly.
 
 ## Join the Zoom Meeting!
 
-TBD
+请联系主办方 lazyparser@gmail.com 获取
 
 ## Call for Speakers/Talkers
 
-欢迎报名演讲，通过 lazyparser at gmail dot com 给OSDT工作组发邮件。
+欢迎报名演讲，通过 lazyparser@gmail.com 给OSDT工作组发邮件。
 
-Talks are welcome. Please send your talk information to Wei Wu. Email: lazyparser at gmail dot com.
+Talks are welcome. Please send your talk information to Wei Wu. Email: lazyparser@gmail.com
