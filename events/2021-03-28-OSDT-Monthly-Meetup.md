@@ -4,6 +4,12 @@
 
 This is a virtual meetup. Let's talk in the Zoom Meeting Room.
 
+- 吴思宇 - RISC-V K 扩展介绍（加密算法基础） - 20210328 - OSDT
+  https://www.bilibili.com/video/BV1rf4y1x7So
+
+- MaskRay - Compiler Driver and Cross Compilation - 20210328 - OSDT
+  https://www.bilibili.com/video/BV1jv41187CG
+
 ## Time
 
 - 2021年3月28日周日上午10点-12点
