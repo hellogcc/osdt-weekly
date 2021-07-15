@@ -1,14 +1,14 @@
 # 笑死，一个实习生都没有就敢开始做 openEuler RISC-V 的移植
 
-（没错，就是那个[最近在开源之夏2021活动](https://mp.weixin.qq.com/s/-VRBfZpfedKZDSf6ojjU1w)中火爆到不要不要的 openEuler。）
+（没错，就是那个[最近在开源之夏2021活动](https://mp.weixin.qq.com/s/-VRBfZpfedKZDSf6ojjU1w)中[火爆到不要不要的](https://mp.weixin.qq.com/s/qy3r8wE-LR4GtzF4tBYGVw) openEuler。）
 
-openEuler 是国内的 yet another Linux Distribution （Linux 发行版）。一开始是作为 CentOS/Fedora 的下游社区，现在逐步转变为「根」发行版社区。起初由 华为 发起，中科院软件所是最早一批和目前（可能）最活跃的社区贡献单位（由软件所的OS团队贡献）。2021年7月开始，PLCT实验室开始与华为的工程师一起负责 RISC-V 平台上的 oE 的构建和维护工作。
+openEuler 是国内的 yet another Linux Distribution （Linux 发行版）。起初由 华为 发起，中科院软件所是最早一批和目前（可能）最活跃的社区贡献单位（由软件所的OS团队贡献）。2021年7月开始，PLCT实验室开始与华为的工程师一起负责 RISC-V 平台上的 oE 的构建和维护工作。
 
 目前老板和资金已经到位，项目经理已经就绪，测试团队已经组建，CI基础设施订单已下。软硬件环境都已经准备好，就差你来干活了（bushi）。
 
 好了说正经的，上JD～
 
-（[全职请点这里](https://mp.weixin.qq.com/s/wXj-w5QCfRCLZ8eko1ysxQ)；其它实习岗位点这里）
+（[全职请点这里](https://mp.weixin.qq.com/s/wXj-w5QCfRCLZ8eko1ysxQ)；其它实习岗位点[这里](https://mp.weixin.qq.com/s/p3drKlnvhkMB9IyEH3NlBA)）
 
 ### NJ53 openEuler RISC-V 开发实习生
 
