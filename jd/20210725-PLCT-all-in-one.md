@@ -1,4 +1,4 @@
-# [资源汇总] PLCT实验室7月实习生及社招岗位汇总：来一起变得更强吧！
+# [资源] PLCT实验室7月实习生及社招岗位汇总：来一起变得更强吧！
 
 如果你对 GCC、LLVM、OpenJDK、V8、QEMU 等底层基础软件感兴趣，那么本文将可能为你提供新的工作机会；
 
@@ -37,7 +37,7 @@ Tarsier项目组是在PLCT实验室培育的一个新团队，其建立目标是
 
 1. 良好的沟通理解能力、能够观察和感知他人的态度和观点。能够主动沟通、遇到计划外或坏消息能够大声的说出来。
 2. 知道如何陈述bugs/issues以及向其他人求助，如何不浪费同事的时间，将复现bug需要的信息提供完整。
-3. 能力值评定一般要求达到LV2级别及以上。参见：[我们如何面试实习生](https://github.com/lazyparser/weloveinterns/blob/master/how-do-we-interview-interns.md)，[我们如何给实习生评级](https://github.com/lazyparser/weloveinterns/blob/master/how-do-we-rank-interns.md)。
+3. 能力值评定一般要求达到LV2级别及以上（评级方法见下方链接）。
 4. 热爱编程，经常写代码。C/C++/Java/JavaScript 任何一种常见语言都可以。
 5. 熟练使用 Linux 命令行；会一点 Python/Bash 脚本进行自动化。
 6. 熟练使用 Google 搜索引擎。
