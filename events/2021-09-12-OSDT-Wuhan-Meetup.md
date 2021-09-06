@@ -1,37 +1,14 @@
-# OSDT Monthly Meetup 2021-02-21
+# OSDT Monthly Meetup @ Wuhan 2021-09-12
 
-本次依然是线上会议形式。
-
-This is a virtual meetup. Let's talk in the Zoom Meeting Room.
-
-- 张洪滨 - ONNX-MLIR LeNet 端到端编译过程 - 20210221 - OSDT Meetup
-  https://www.bilibili.com/video/BV1Vr4y1A7Cg
-
-- RadarSong - 用VSCode来调试TVM - 20210221 - OSDT Meetup
-  https://www.bilibili.com/video/BV1H5411N7ag
-
-- MaskRay (Fangrui Song) - Metadata Sections - 20210221 - OSDT Meetup
-  https://www.bilibili.com/video/BV1HA411M7SN
+终于，我们要恢复线下聚会啦！9月12日周日，武汉，具体地点还没定，欢迎各位小伙伴留言推荐便宜又方便的地点！
 
 ## Time
 
-LOS ANGELES, United States, California
-6:00p	Sat, Feb 20 2021
-8:00p	Sat, Feb 20 2021
-
-BEIJING, China
-10:00a	Sun, Feb 21 2021
-12:00p	Sun, Feb 21 2021
-
-LONDON, United Kingdom, England
-2:00a	Sun, Feb 21 2021
-4:00a	Sun, Feb 21 2021
+2021年9月12日，时间暂定是 10点～4点 开放式 meetup，其中10点到12点有技术报告。随时可以来聊聊。
 
 ## Agenda
 
-- MaskRay: Recent Works about TLS, and others.
-- RadarSong: Hands up on Debugging TVM using VSCode
-- Hongbin Zhang: Recent Works on MLIR
+- 欢迎报名演讲。演讲通过Zoom，所以全世界的伙伴都可以报名。
 - Open Discussion
 
 ## Live Streaming
@@ -46,14 +23,14 @@ No login needed. you can view it directly.
 
 Wei Wu - PLCT Lab is inviting you to a scheduled Zoom meeting.
 
-Topic: OSDT Monthly Meetup Feb-2021
-Time: Feb 21, 2021 10:00 AM Beijing, Shanghai
+Topic: OSDT Wuhan Meetup
+Time: Sep 12, 2021 10:00 AM Beijing, Shanghai
 
 Join Zoom Meeting
-https://zoom.com.cn/j/89465142537?pwd=YVA2MEhuSXJQd2pFM2lCa0xoRVdFdz09
+https://zoom.com.cn/j/82939615716?pwd=V3hsZVZmSUxPSXVvbDNpT2JjSWFvQT09
 
-Meeting ID: 894 6514 2537
-Passcode: 555049
+Meeting ID: 829 3961 5716
+Passcode: 231846
 
 ## Call for Speakers/Talkers
 
