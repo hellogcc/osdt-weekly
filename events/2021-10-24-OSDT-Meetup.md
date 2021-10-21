@@ -29,7 +29,7 @@ LOS ANGELES, United States, California
 - 10:30 - 11:40 吴伟 - 第13届开源开发工具大会（OSDTConf2021）筹备情况介绍
 - 10:40 - 11:00 陆旭凡、汪辰 - AOSP RISC-V 开源现状的验证（汪辰老师睡下了还不知情）
 - 11:00 - 11:30 圆桌 - RISC-V开源社区动态以及玄铁C910开源对于国内外RISC-V社区的冲击
-- 11:30 - 11:50 Sequencer - PLCT Chisel 小队近期的工作（绝对没有安利
+- 11:30 - 11:50 Sequencer - PLCT Chisel 小队近期的工作（绝对没有安利🚩🚩🚩
 - 11:50 - 12:00 自由聊天
 
 ## B站直播（随缘） / Live Streaming
