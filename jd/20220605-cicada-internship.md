@@ -4,7 +4,7 @@
 
 ## 来自蝉语社区的岗位介绍
 
-**蝉语实习生 / Cicada Internships**
+**BJ61 蝉语实习生 / Cicada Internships**
 
 [蝉语](https://github.com/cicada-lang) 是一个开源程序语言设计团队。
 
