@@ -44,6 +44,6 @@ Passcode: 233233
 ## 演讲报名
 
 任何一种都OK：
-1. 微信添加 fangzhang1024 （请注明OSDT）添加组织者 吴伟。
+1. 微信添加 lazyparser （请注明OSDT）添加组织者 吴伟。
 2. 发送 pull request 改本议程
 3. 邮件发送到 lazyparser@gmail.com

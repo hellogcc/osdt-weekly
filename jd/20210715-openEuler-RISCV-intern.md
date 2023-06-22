@@ -21,7 +21,7 @@ openEuler 是国内的 yet another Linux Distribution （Linux 发行版）。�
   构建状态 https://build.openeuler.org/project/show/openEuler:Mainline:RISC-V
   会议纪要 https://etherpad.openeuler.org/p/sig-RISC-V-meetings
 
-不管是否决定来实习，都欢迎加老板微信 fangzhang1024 先拉你到 oE RISC-V SIG 的群里。每两周开会，各种讨论事项都很公开。来感受下业界的脉搏，说不定以后毕业未来的面试官/老板就在群里😄
+不管是否决定来实习，都欢迎加老板微信 lazyparser 先拉你到 oE RISC-V SIG 的群里。每两周开会，各种讨论事项都很公开。来感受下业界的脉搏，说不定以后毕业未来的面试官/老板就在群里😄
 
 ## 如何正确的投递简历
 

@@ -43,4 +43,4 @@ https://github.com/plctlab/weloveinterns/blob/master/open-internships.md
 
 邮件必须附带简历。没有PDF格式简历的邮件不保证会收到回复。
 
-如果还不确定是否投递简历，可以添加吴伟微信 **fangzhang1024** 进行咨询。
+如果还不确定是否投递简历，可以添加吴伟微信 **lazyparser** 进行咨询。

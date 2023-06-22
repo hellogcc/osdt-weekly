@@ -25,7 +25,7 @@
 
 ## 如果您想要分享，请和我们联系：
 * 发送邮件到 吴伟 lazyparser@gmail.com （请在邮件标题中注明OSDT演讲报名）
-* 添加微信 吴伟 fangzhang1024 （请在验证信息中注明OSDT演讲报名）
+* 添加微信 吴伟 lazyparser （请在验证信息中注明OSDT演讲报名）
 * 登陆freenode IRC #hellogcc 房间
 
 ## 演讲征集时间：
@@ -38,7 +38,7 @@
 我们欢迎你的赞助。赞助可以是公司赞助也可以是个人赞助。赞助形式包含场地提供、抽奖奖品提供、图书赠品/奖品赞助、现场茶歇赞助、开发板赞助等。
 
 如果贵公司有意提供赞助，欢迎和我们联系：
-吴伟 lazyparser@gmail.com （或微信号 fangzhang1024）
+吴伟 lazyparser@gmail.com （或微信号 lazyparser）
 
 ### 往届会议
 * OSDT 2019: https://github.com/hellogcc/OSDT2019

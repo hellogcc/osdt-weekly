@@ -26,7 +26,7 @@ No login needed. you can view it directly.
 
 ## Join the Zoom Meeting!
 
-请通过微信（fangzhang1024）或邮件（ lazyparser@gmail.com ）获取。
+请通过微信（lazyparser）或邮件（ lazyparser@gmail.com ）获取。
 
 ## Call for Speakers/Talkers
 
