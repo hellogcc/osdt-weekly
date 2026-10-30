@@ -1,0 +1,67 @@
+name: Deploy website
+
+on:
+  push:
+    branches: [master, main]
+    paths:
+      - "weekly-*/*.md"
+      - "website/**"
+      - "scripts/**"
+      - "images/**"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # 期号页面与索引数据由脚本从 weekly-*/*.md 生成，不入库，所以构建前先跑一次
+      - name: 生成期号页面
+        run: python3 scripts/gen_issues.py
+
+      - name: 安装 Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.147.9"
+          extended: true
+
+      - name: 读取 Pages 参数
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: 构建站点
+        run: hugo --source website --gc --minify --cleanDestinationDir --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+      - name: 站内链接与 RSS 自检
+        run: python3 scripts/check_site.py
+
+      - name: 上传产物
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: website/public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 部署到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

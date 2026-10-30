@@ -1,0 +1,12 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="wrap" style="text-align:center">
+    <h1>页面没有找到</h1>
+    <p class="lede" style="margin-inline:auto">链接可能已经变更。你可以回到首页，或者直接翻全部往期。</p>
+    <div style="margin-top:1.2rem;display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap">
+      <a class="btn primary" href="{{ "" | relURL }}">回到首页</a>
+      <a class="btn" href="{{ "archive/" | relURL }}">全部往期</a>
+    </div>
+  </div>
+</section>
+{{ end }}

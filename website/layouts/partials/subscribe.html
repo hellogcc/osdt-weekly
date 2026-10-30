@@ -1,0 +1,20 @@
+{{/* 邮件订阅 UI —— 订阅服务尚未选定，表单整体禁用（无法输入、无法提交）。
+   开通时把 site.Params.subscribeEnabled 置 true 并补上 action / 服务商字段即可。 */}}
+{{ $enabled := site.Params.subscribeEnabled }}
+<section class="subscribe">
+  <h2>邮件订阅</h2>
+  <form class="sub-form" aria-disabled="{{ if $enabled }}false{{ else }}true{{ end }}"
+        {{ if not $enabled }}onsubmit="return false"{{ end }}>
+    <input type="email" name="email" inputmode="email" autocomplete="email"
+           placeholder="{{ if $enabled }}你的邮箱地址{{ else }}订阅服务尚未开通{{ end }}"
+           aria-label="邮箱地址" {{ if not $enabled }}disabled{{ end }} required>
+    <button type="submit" {{ if not $enabled }}disabled{{ end }}>订阅</button>
+  </form>
+  <p class="note">
+    {{ if $enabled }}
+    订阅后每周三期发布时收到一封邮件，可随时退订。
+    {{ else }}
+    {{ site.Params.subscribeNote }}　现在就订阅 <a href="{{ "rss.xml" | relURL }}">RSS</a>，或关注 <a href="{{ site.Params.github }}" target="_blank" rel="noopener">GitHub 仓库</a>。
+    {{ end }}
+  </p>
+</section>

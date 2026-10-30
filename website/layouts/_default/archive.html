@@ -1,0 +1,34 @@
+{{ define "main" }}
+{{ $issues := site.Data.issues.issues }}
+<section class="hero">
+  <div class="wrap-wide">
+    <h1>全部往期</h1>
+    <p class="lede">共 {{ len $issues }} 期，按年份分组，最新的在最前。</p>
+    <div class="year-chips">
+      {{ $seen := slice }}
+      {{ range $issues }}
+        {{ if not (in $seen .year) }}
+          {{ $seen = $seen | append .year }}
+          <a href="#y-{{ .year }}">{{ .year }}</a>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<div class="wrap-wide">
+  {{ $seen2 := slice }}
+  {{ range $issues }}
+    {{ if not (in $seen2 .year) }}
+      {{ $seen2 = $seen2 | append .year }}
+      {{ $year := .year }}
+      <section class="year-block" id="y-{{ $year }}">
+        <h2>{{ $year }}<span class="count">{{ len (where $issues "year" $year) }} 期</span></h2>
+        {{ partial "issue-rows.html" (dict "items" (where $issues "year" $year)) }}
+      </section>
+    {{ end }}
+  {{ end }}
+
+  {{ partial "subscribe.html" . }}
+</div>
+{{ end }}

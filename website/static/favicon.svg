@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="OSDT Weekly">
+  <rect width="64" height="64" rx="13" fill="#0b5fa5"/>
+  <g fill="none" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round">
+    <path d="M18 22h20"/>
+    <path d="M18 32h28"/>
+    <path d="M18 42h14"/>
+  </g>
+  <circle cx="46" cy="42" r="7" fill="#ffffff" opacity=".92"/>
+  <path d="M46 38.4v4.2l3 1.8" stroke="#0b5fa5" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+</svg>

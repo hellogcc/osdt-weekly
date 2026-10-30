@@ -1,0 +1,18 @@
+<div class="wrap-wide header-inner">
+  <a class="brand" href="{{ "" | relURL }}">
+    {{ site.Params.siteName }}<span class="cn">{{ site.Params.siteNameCN }}</span>
+  </a>
+
+  <button class="icon-btn menu-toggle" id="menuToggle" aria-label="菜单" aria-expanded="false">☰</button>
+
+  <nav class="nav" id="siteNav">
+    <a href="{{ "" | relURL }}">首页</a>
+    <a href="{{ "archive/" | relURL }}">全部往期</a>
+    <a href="{{ "about/" | relURL }}">关于</a>
+    <a class="rss-link" href="{{ "rss.xml" | relURL }}" title="RSS 订阅">
+      <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><circle cx="3" cy="13" r="2"/><path d="M1 6.2v2.2c3.7 0 6.6 2.9 6.6 6.6h2.2C9.8 9.9 5.9 6.2 1 6.2zM1 1v2.2c6.9 0 12.5 5.6 12.5 12.5H16C16 7.7 9.3 1 1 1z"/></svg>
+      RSS
+    </a>
+    <button class="icon-btn" id="themeToggle" aria-label="切换明暗配色" title="切换明暗配色">◐</button>
+  </nav>
+</div>

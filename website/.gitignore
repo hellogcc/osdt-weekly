@@ -1,0 +1,7 @@
+public/
+resources/_gen/
+.hugo_build.lock
+# 以下为 scripts/gen_issues.py 的生成物
+content/issue/
+data/issues.yaml
+static/images/
