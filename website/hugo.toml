@@ -1,0 +1,53 @@
+baseURL = "https://osdtweekly.com/"
+title = "OSDT Weekly"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+timeZone = "Asia/Shanghai"
+summaryLength = 40
+# 周刊文件常带「下一期」日期（比当前时间晚），否则最新一期不会被渲染
+buildFuture = true
+
+# 内容由 scripts/gen_issues.py 从仓库根目录的 weekly-YYYY/*.md 生成到 content/issue/
+defaultContentLanguage = "zh"
+defaultContentLanguageInSubdir = false
+
+[params]
+  siteName = "OSDT Weekly"
+  siteNameCN = "开源开发工具周报"
+  description = "OSDT Weekly（开源开发工具周报）是由 HelloGCC 与 HelloLLVM 社区维护的摘要周刊，覆盖 GCC、LLVM、GDB、Binutils、QEMU、TVM 等开源开发工具的一周动态。每周三发布。"
+  github = "https://github.com/hellogcc/osdt-weekly"
+  defaultTheme = "auto"        # auto | light | dark
+  # 邮件订阅：订阅服务选型中，先把 UI 做出来但禁用输入
+  subscribeEnabled = false
+  subscribeNote = "邮件订阅服务正在选型中，尚未开通。可以先订阅 RSS，或到 GitHub 仓库提 Issue / PR。"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.goldmark.parser]
+    attribute = true
+    wrapStandAloneImageWithinParagraph = false
+  [markup.goldmark.extensions]
+    # 正文里大量使用 ~ 与中文排版符号，关掉删除线避免「4~9」被解析成 <del>
+    strikethrough = false
+    linkify = true
+    table = true
+    typographer = false
+
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel = 3
+  ordered = false
+
+# RSS：输出到 /rss.xml（与 llvmweekly 一致）
+[outputFormats.rss]
+  mediaType = "application/rss+xml"
+  baseName = "rss"
+  isPlainText = false
+
+[services.rss]
+  limit = 50
+
+[pagination]
+  pagerSize = 50

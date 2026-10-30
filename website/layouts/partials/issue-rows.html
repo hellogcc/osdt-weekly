@@ -1,0 +1,15 @@
+{{/* 期号列表：参数 (dict "items" <slice>) */}}
+<ul class="issue-list">
+  {{ range .items }}
+  <li>
+    <div class="num">
+      <a href="{{ printf "issue/%v/" .issue | relURL }}">#{{ .issue }}</a>
+      <small>{{ .date }}</small>
+    </div>
+    <div class="body">
+      <a class="title" href="{{ printf "issue/%v/" .issue | relURL }}">OSDT Weekly 第{{ .issue }}期</a>
+      {{ with .sections }}<div class="sections">{{ . }}</div>{{ end }}
+    </div>
+  </li>
+  {{ end }}
+</ul>

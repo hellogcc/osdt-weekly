@@ -244,3 +244,10 @@ TSWLatexianTemp*
 # vim
 *.swp
 
+
+# 站点构建产物与生成的内容（scripts/gen_issues.py）
+website/public/
+website/resources/_gen/
+website/content/issue/
+website/data/issues.yaml
+website/static/images/

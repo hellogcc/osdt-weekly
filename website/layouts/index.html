@@ -1,0 +1,53 @@
+{{ define "main" }}
+{{ $issues := site.Data.issues.issues }}
+{{ $latest := index $issues 0 }}
+
+<section class="hero">
+  <div class="wrap-wide">
+    <h1>OSDT Weekly · 开源开发工具周报</h1>
+    <p class="lede">{{ site.Params.description }}</p>
+    <div class="hero-meta">
+      <span>共 <strong>{{ len $issues }}</strong> 期</span><span class="dot-sep">·</span>
+      <span>自 2019 年 7 月起</span><span class="dot-sep">·</span>
+      <span>每周三发布</span><span class="dot-sep">·</span>
+      <span>中文</span>
+    </div>
+  </div>
+</section>
+
+<div class="wrap-wide">
+  {{ partial "subscribe.html" . }}
+
+  {{ with $latest }}
+  <section class="section-head"><h2>最新一期</h2><a class="more" href="{{ printf "issue/%v/" .issue | relURL }}">全部往期 →</a></section>
+  <div class="latest">
+    <span class="tag">最新</span>
+    <h2><a href="{{ printf "issue/%v/" .issue | relURL }}">OSDT Weekly 第{{ .issue }}期</a></h2>
+    <div class="meta">{{ .date }}</div>
+    {{ with .sections }}<div class="sections">本期内容：{{ . }}</div>{{ end }}
+    <div class="actions">
+      <a class="btn primary" href="{{ printf "issue/%v/" .issue | relURL }}">阅读本期 →</a>
+    </div>
+  </div>
+  {{ end }}
+
+  <section class="section-head"><h2>最近发布</h2><a class="more" href="{{ "archive/" | relURL }}">全部 {{ len $issues }} 期 →</a></section>
+  {{ partial "issue-rows.html" (dict "items" (first 12 (after 1 $issues))) }}
+
+  {{ if .Content }}
+  <section class="section-head"><h2>关于这份周刊</h2></section>
+  <div class="prose">{{ .Content }}</div>
+  {{ end }}
+
+  <section class="section-head"><h2>按年份浏览</h2></section>
+  <div class="year-chips">
+    {{ $seen := slice }}
+    {{ range $issues }}
+      {{ if not (in $seen .year) }}
+        {{ $seen = $seen | append .year }}
+        <a href="{{ "archive/" | relURL }}#y-{{ .year }}">{{ .year }}</a>
+      {{ end }}
+    {{ end }}
+  </div>
+</div>
+{{ end }}

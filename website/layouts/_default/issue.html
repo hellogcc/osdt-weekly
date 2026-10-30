@@ -1,0 +1,47 @@
+{{ define "main" }}
+{{ $n := .Params.issue }}
+
+<header class="issue-head">
+  <div class="wrap-wide">
+    <div class="crumb"><a href="{{ "" | relURL }}">首页</a> / 第 {{ $n }} 期</div>
+    <h1>{{ .Title }}</h1>
+    <div class="meta">
+      {{ .Date.Format "2006-01-02" }}　<span class="src">{{ .Params.source }}</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap-wide">
+  <div class="issue-layout">
+    <article class="prose">
+      {{ .Content }}
+    </article>
+
+    {{ $toc := .TableOfContents }}
+    {{ if gt (len $toc) 80 }}
+    <aside class="toc">
+      <div class="toc-title">本期目录</div>
+      <div class="toc-body">{{ $toc }}</div>
+    </aside>
+    {{ end }}
+  </div>
+
+  {{/* 上下期：用数据切片的位置算，不依赖 Hugo 的 Next/PrevInSection 方向语义
+         （site.Data.issues.issues 按期号降序，故 pos-1 更新、pos+1 更早） */}}
+  {{ $all := site.Data.issues.issues }}
+  {{ $pos := -1 }}
+  {{ range $i, $e := $all }}{{ if eq $e.issue $n }}{{ $pos = $i }}{{ end }}{{ end }}
+  <nav class="pager">
+    {{ if and (ge $pos 0) (lt $pos (sub (len $all) 1)) }}
+      {{ $older := index $all (add $pos 1) }}
+      <a href="{{ printf "issue/%v/" $older.issue | relURL }}">← 第 {{ $older.issue }} 期<span style="color:var(--muted);font-weight:500"> · {{ $older.date }}</span></a>
+    {{ end }}
+    {{ if gt $pos 0 }}
+      {{ $newer := index $all (sub $pos 1) }}
+      <a class="next" href="{{ printf "issue/%v/" $newer.issue | relURL }}">第 {{ $newer.issue }} 期<span style="color:var(--muted);font-weight:500"> · {{ $newer.date }}</span> →</a>
+    {{ end }}
+  </nav>
+
+  {{ partial "subscribe.html" . }}
+</div>
+{{ end }}
