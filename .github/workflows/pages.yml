@@ -45,7 +45,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: 构建站点
-        run: hugo --source website --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+        run: hugo --source website --gc --minify --cleanDestinationDir --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: 站内链接与 RSS 自检
         run: python3 scripts/check_site.py

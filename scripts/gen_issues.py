@@ -25,6 +25,20 @@ OUT_STATIC_IMG = os.path.join(ROOT, "website", "static", "images")
 
 BOILER_MARK = "点击「查看原文」"
 ISSUE_RE = re.compile(r"第\s*(\d+)\s*期")
+WITHHELD_FILE = os.path.join(ROOT, "scripts", "withheld_issues.txt")
+
+
+def load_withheld():
+    """读取未发布（草稿）期号列表：一行一个，`#` 起注释。文件不存在即视为全部发布。"""
+    if not os.path.exists(WITHHELD_FILE):
+        return set()
+    out = set()
+    with open(WITHHELD_FILE, encoding="utf-8") as f:
+        for line in f:
+            s = line.split("#", 1)[0].strip()
+            if s.isdigit():
+                out.add(int(s))
+    return out
 
 
 def read(path):
@@ -157,7 +171,17 @@ def main():
     if missing:
         print(f"  注意：期号不连续，缺 {len(missing)} 个: {missing[:10]}")
 
-    print(f"期数: {len(records)} | 期号范围: {min(nums)}-{max(nums)} | 年份: "
+    # 草稿期号：不生成页面、不进索引，首页/归档/RSS/上下期导航都会跳过
+    withheld = load_withheld()
+    if withheld:
+        held = sorted(set(nums) & withheld)
+        unknown = sorted(withheld - set(nums))
+        records = [r for r in records if r["issue"] not in withheld]
+        print(f"未发布（草稿）跳过 {len(held)} 期: {held or '无命中'}")
+        if unknown:
+            print(f"  注意：withheld_issues.txt 里有源文件不存在的期号: {unknown}")
+
+    print(f"期数: {len(records)} | 期号范围: {min(r['issue'] for r in records)}-{max(r['issue'] for r in records)} | 年份: "
           f"{min(r['year'] for r in records)}-{max(r['year'] for r in records)}")
     print(f"带样板段被清理: {sum(1 for r in records if BOILER_MARK in read(os.path.join(ROOT, r['path'])))}")
     if check_only:

@@ -8,7 +8,7 @@ push:
 # 期号页面由 scripts/gen_issues.py 生成，故所有站点目标都先跑一遍生成
 site:
 	python3 scripts/gen_issues.py
-	hugo --source website --gc --minify
+	hugo --source website --gc --minify --cleanDestinationDir
 
 site-serve:
 	python3 scripts/gen_issues.py

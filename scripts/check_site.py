@@ -51,11 +51,32 @@ def main():
             if not any(os.path.exists(c) for c in candidates):
                 broken.append((os.path.relpath(path, root), href))
 
+    # 未发布期号：不应有页面，也不该出现在首页与 RSS 里
+    withheld = set()
+    wf = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                      "scripts", "withheld_issues.txt")
+    if os.path.exists(wf):
+        with open(wf, encoding="utf-8") as fh:
+            for line in fh:
+                s = line.split("#", 1)[0].strip()
+                if s.isdigit():
+                    withheld.add(int(s))
+    leaked = []
+    for n in sorted(withheld):
+        if os.path.exists(os.path.join(root, "issue", str(n), "index.html")):
+            leaked.append(f"/issue/{n}/ 页面存在")
+        for f in ("index.html", "rss.xml"):
+            p = os.path.join(root, f)
+            if os.path.exists(p):
+                with open(p, encoding="utf-8", errors="replace") as fh:
+                    if f"/issue/{n}/" in fh.read():
+                        leaked.append(f"{f} 里出现 /issue/{n}/")
+
     # 期号完整性
     issues = sorted(int(d) for d in os.listdir(os.path.join(root, "issue"))
                     if d.isdigit() and os.path.isdir(os.path.join(root, "issue", d))) \
         if os.path.isdir(os.path.join(root, "issue")) else []
-    gaps = sorted(set(range(1, issues[-1] + 1)) - set(issues)) if issues else []
+    gaps = sorted(set(range(1, issues[-1] + 1)) - set(issues) - withheld) if issues else []
 
     # RSS
     rss_ok, rss_items, rss_err = False, 0, ""
@@ -80,9 +101,13 @@ def main():
         print(f"  ✗ {page} → {href}")
     print(f"期号页面: {len(issues)} 个，范围 {issues[0] if issues else '-'}-{issues[-1] if issues else '-'}"
           + (f"，缺号 {gaps[:10]}" if gaps else "，无缺号"))
+    if withheld:
+        print(f"未发布（草稿）: {sorted(withheld)}，泄漏 {len(leaked)} 处")
+        for item in leaked[:10]:
+            print(f"  ✗ {item}")
     print(f"RSS: {'正常' if rss_ok else '异常'}，{rss_items} 条" + (f"（{rss_err}）" if rss_err else ""))
 
-    if broken or gaps or not rss_ok:
+    if broken or gaps or leaked or not rss_ok:
         sys.exit(1)
     print("全部通过")
 
