@@ -251,3 +251,4 @@ website/resources/_gen/
 website/content/issue/
 website/data/issues.yaml
 website/static/images/
+.DS_Store
